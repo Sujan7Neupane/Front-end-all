@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in HTML</title>
+</head>
+<body>
+    <!-- <table border="1" align="center" width="50%">
+        <thead>
+            <tr>
+                <th>S.N.</th>
+                <th>Full Name</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">1</td>
+                <td rowspan="2" align="center">Sujan Neupane</td>
+                <td>Boudha</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Ram Bahadur</td>
+                <td>Boudha</td>
+            </tr>
+        </tbody>
+    </table> -->
+    <!-- <table border="1" width="50%">
+        <tr align="center">
+            <td rowspan="2">A</td>
+            <td>B</td>
+            <td rowspan="3">D</td>
+            <td colspan="2">E</td>
+            <td>F</td>
+        </tr>
+        <tr align="center">
+            <td>C</td>
+            <td rowspan="2">G</td>
+            <td rowspan="2">H</td>
+            <td rowspan="2">I</td>
+        </tr>
+        <tr align="center">
+            <td colspan="2">J</td>
+        </tr>
+        <tr align="center">
+            <td colspan="3">K</td>
+            <td>L</td>
+            <td colspan="2">M</td>
+        </tr>
+    </table> -->
+
+    <table align="center" width="50%" border="1">
+        <tr>
+           <th colspan="6" align="center">Time Table </th>
+        </tr>
+        <tr>
+            <th rowspan="6">Hours</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+            <th colspan="5">Lunch</th>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td rowspan="2">Projects</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+        </tr>
+    </table>
+    <br> <br> <br> <br>
+    
+    <table border="1" width="50%" align="center">
+        <tr>
+            <th rowspan="2">SN</th>
+            <th rowspan="2">SUBJECTS</th>
+            <th rowspan="2">FULL MARKS</th>
+            <th rowspan="2">PASS MARKS</th>
+            <th colspan="3">OBTAINED MARKS</th>
+            <th rowspan="2">Class Highest</th>
+        </tr>
+        <tr>
+            <th>TH</th>
+            <th>PR</th>
+            <th>TOTAL</th>
+        </tr>
+    </table>
+    <br> <br> <br> <br> <br>
+
+    <table border="1" width="60%" align="center">
+        <thead>
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+            </tr>
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topic</th>
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00 a.m.</td>
+                <td rowspan="2">5:00 p.m.</td>
+                <td>Introduction to XML</td>
+            </tr>
+            <tr>
+                <td>Validity: DTD and Relax NG</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Tuesday</td>
+                <td>8:00 a.m.</td>
+                <td>11:00 a.m.</td>
+                <td rowspan="2">XPath</td>
+            </tr>
+            <tr>
+                <td>11:00 a.m.</td>
+                <td>2:00 p.m.</td>
+            </tr>
+            <tr>
+                <td>2:00 p.m.</td>
+                <td>5:00 p.m.</td>
+                <td rowspan="1">XSL Transformation</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>8:00 a.m.</td>
+                <td>12:00 p.m.</td>
+                <td>XSL Formatting Objects</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br><br><br>
+
+    <table border="5" width="50%" align="center" style="border-collapse:collapse; text-align: center;">
+        <thead>
+            <tr>
+                <th>Day/Period</th>
+                <th>I 9:30-10:20 </th>
+                <th>II 10:20-11:10 </th>
+                <th>III 11:10-12:00 </th>
+                <th>12:00-12:40</th>
+                <th>IV 12:40-1:30 </th>
+                <th>V 1:30-2:20 </th>
+                <th>VI 2:20-3:10 </th>
+                <th>VII 3:10-4:00 </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Monday</th>
+                <td>Eng</td>
+                <td>Math</td>
+                <td>Che</td>
+                <th rowspan="6">LUNCH</th>
+                <td colspan="3" align="center">LAB</td>
+                <td>Phy</td>
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+                <td colspan="3" align="center">LAB</td>
+                <td>Eng</td>
+                <td>Che</td>
+                <td>Math</td>
+                <td>SPORTS</td>
+            </tr>
+            <tr>
+                <th>Wednesday</th>
+                <td>Math</td>
+                <td>Phy</td>
+                <td>Eng</td>
+                <td>Che</td>
+                <td colspan="3" align="center">LIBRARY</td>
+            </tr>
+            <tr>
+                <th>Thursday</th>
+                <td colspan="3" align="center">LAB</td>
+                <td>Math</td>
+                <td>Che</td>
+                <td>Eng</td>
+                <td>Phy</td>
+            </tr>
+            <tr>
+                <th>Friday</th>
+                <td>Phy</td>
+                <td>Eng</td>
+                <td>Che</td>
+                <td colspan="3" align="center">LAB</td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <th>Saturday</th>
+                <td>Eng</td>
+                <td>Che</td>
+                <td>Math</td>
+                <td colspan="3" align="center">SEMINARS</td>
+                <td>SPORTS</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br><br><br>
+
+    <table border="1" align="center">
+        <thead>
+            <tr>
+                <th>Countries Name</th>
+                <th>Countries Flag</th>
+                <th>Weather</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nepal</td>
+                <td><img src="/images/Nepal.png" alt="Nepal" width="100"></td>
+                <td>30 Degree Celsius</td>
+            </tr>
+            <tr>
+                <td>USA</td>
+                <td><img src="/images/USA.png" alt="USA"></td>
+                <td>21 Degree Celsius</td>
+            </tr>
+            <tr>
+                <td>Canada</td>
+                <td><img src="/images/canada.png" alt="Canada"></td>
+                <td>10 Degree Celsius</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br><br><br>
+
+    <table border="1" width="50%" align="center" style="text-align: center;">
+        <thead>
+            <tr>
+                <th colspan="2" rowspan="2" width="50%"></th>
+                <th colspan="4">
+                    Distance
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2">Possible way</th>
+                <th colspan="2">Distance</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2" rowspan="2">Destination 1</td>
+                <td colspan="2">Way 1</td>
+                <td>400m</td>
+                <td>500m</td>
+            </tr>
+            <tr>
+                <td colspan="2">Way 2</td>
+                <td>400m</td>
+                <td>500m</td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="2">Destination 2</td>
+                <td colspan="2">Way 3</td>
+                <td>400m</td>
+                <td>500m</td>
+            </tr>
+            <tr>
+                <td colspan="2">Way 4</td>
+                <td>400m</td>
+                <td>500m</td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="2">Destination 3</td>
+                <td colspan="2">Way 5</td>
+                <td>400m</td>
+                <td>500m</td>
+            </tr>
+            <tr>
+                <td colspan="2">Way 6</td>
+                <td>400m</td>
+                <td>500m</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br><br><br>
+
+    <table border="1" align="center" width="50%">
+        <thead>
+           <tr>
+            <th rowspan="2" colspan="2">Student</th>
+            <th colspan="4">Exam</th>
+            <th colspan="4">2nd Exam</th>
+            <th rowspan="2" colspan="2">Final Grade</th>
+           </tr> 
+           <tr>
+            <th>Q1</th>
+            <th>Q2</th>
+            <th>Q3</th>
+            <th rowspan="2">Grade</th>
+            <th>Q1</th>
+            <th>Q2</th>
+            <th>Q3</th>
+            <th rowspan="2">Grade</th>
+           </tr>
+           <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <td>8</td>
+            <td>7</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>7</td>
+            <th>s/ A.</th>
+            <th>c/ A.</th>
+           </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>80514261</td>
+                <td>John</td>
+                <td>70%</td>
+                <td>100%</td>
+                <td>100%</td>
+                <td>17.6</td>
+                <td colspan="4"></td>
+                <td>17.6</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>854544261</td>
+                <td>Mary</td>
+                <td>70%</td>
+                <td>100%</td>
+                <td>100%</td>
+                <td>17.6</td>
+                <td>100%</td>
+                <td>150%</td>
+                <td>10%</td>
+                <td>18.92</td>
+                <td>17.6</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>8435515125</td>
+                <td>Claire</td>
+                <td colspan="4"></td>
+                <td>50%</td>
+                <td>50%</td>
+                <td>50%</td>
+                <td>50%</td>
+                <td>50%</td>
+                <td>50%</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br><br>
+
+    <table border="1" width="70%" align="center">
+        <thead>
+            <tr>
+                <th colspan="6">Tables in HTML</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">A</td>
+                <td>B</td>
+                <td rowspan="3">D</td>
+                <td colspan="2">E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td rowspan="2">G</td>
+                <td rowspan="2">H</td>
+                <td rowspan="2">I</td>
+            </tr>
+            <tr>
+                <td colspan="2">J</td>
+            </tr>
+            <tr>
+                <td colspan="3">K</td>
+                <td>L</td>
+                <td colspan="2">M</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+
+    <table border="1" width="60%" align="center">
+        <thead>
+            <tr>
+                <th colspan="13">Most complex table in HTML</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="9">A</td>
+                <td rowspan="8">B</td>
+                <td rowspan="7">C</td>
+                <td rowspan="6">D</td>
+                <td rowspan="5">E</td>
+                <td rowspan="4">F</td>
+                <td>AH</td>
+                <td rowspan="4">H</td>
+                <td rowspan="5">I</td>
+                <td rowspan="6">J</td>
+                <td rowspan="7">K</td>
+                <td rowspan="8">L</td>
+                <td rowspan="10">M</td>
+            </tr>
+            <tr>
+                <td>H</td>
+            </tr>
+            <tr>
+                <td>GH</td>
+            </tr>
+            <tr>
+                <td>N</td>
+            </tr>
+            <tr>
+                <td colspan="3">O</td>
+            </tr>
+            <tr>
+                <td colspan="5">P</td>
+            </tr>
+            <tr>
+                <td colspan="7">Q</td>
+            </tr>
+            <tr>
+                <td colspan="2">R</td>
+                <td>S</td>
+                <td>T</td>
+                <td>U</td>
+                <td>V</td>
+                <td>W</td>
+                <td colspan="2">X</td>
+            </tr>
+            <tr>
+                <td colspan="11">Y</td>
+            </tr>
+            <tr>
+                <td colspan="2">Z</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+
+    <table border="1" align="center" width="60%" style="text-align: center;">
+        <thead>
+            <tr>
+                <th colspan="13">Most complex table in HTML</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="9">A</td>
+                <td rowspan="8">B</td>
+                <td rowspan="7">C</td>
+                <td rowspan="6">D</td>
+                <td rowspan="5">E</td>
+                <td rowspan="4">F</td>
+                <td>AH</td>
+                <td rowspan="4">H</td>
+                <td rowspan="5">I</td>
+                <td rowspan="6">J</td>
+                <td rowspan="7">K</td>
+                <td rowspan="8">L</td>
+                <td rowspan="10">M</td>
+            </tr>
+            <tr>
+                <td>H</td>
+            </tr>
+            <tr>
+                <td>GH</td>
+            </tr>
+            <tr>
+                <td>N</td>
+            </tr>
+            <tr>
+                <td colspan="3">O</td>
+            </tr>
+            <tr>
+                <td colspan="5">P</td>
+            </tr>
+            <tr>
+                <td colspan="7">Q</td>
+            </tr>
+            <tr>
+                <td colspan="2">R</td>
+                <td>S</td>
+                <td>T</td>
+                <td>U</td>
+                <td>V</td>
+                <td>W</td>
+                <td colspan="2">X</td>
+            </tr>
+            <tr>
+                <td colspan="11">Y</td>
+            </tr>
+            <tr>
+                <td colspan="2">Z</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,144 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+a.news-block {
+    display: flex;
+    width: 500px;
+    position: relative;
+}
+
+a.news-block img {
+    width: 500px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.716), rgba(255, 255, 255, 0.08));
+    width: 100%;
+    height: 100%;
+}
+
+.news-details {
+    padding: 16px;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+}
+
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Helvetica Neue";
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* section.main {
+  padding: 50px;
+  background-color: #34136e;
+}
+
+section h2 {
+  margin-bottom: 13px;
+}
+
+div.upper {
+  padding: 10px auto;
+  color: white;
+  margin: 10px auto;
+}
+
+div.lower {
+  background-color: white;
+  width: 50%;
+  padding: 30px;
+}
+
+.lower small {
+  color: gray;
+}
+
+.lower .main-heading {
+  color:#34136e;
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.lower .desc {
+  color: hotpink;
+  font-size: 15px;
+} */
+
+/* .box {
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 1px 1px 5px 1px red;
+  background-image: url(https://interactive-examples.mdn.mozilla.net/media/examples/star.png), url(/images/canada.png);
+  background-repeat: repeat, no-repeat;
+  background-position: center, center;
+}
+
+.box:hover {
+  transform: rotate(45deg);
+  transition: all 0.7s ease-in;
+} */
+
+.main-section {
+  margin-top: 20px;
+}
+
+.main-section .boxes {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.main-section .box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  background-color: rgb(167, 208, 208);
+  font-size: 0.75rem;
+  box-shadow: 0px 0px 3px rgb(111, 111, 111);
+}
+
+.main-section .box .title {
+  font-size: 20px;
+  color: aliceblue;
+}
+
+.main-section .box img{
+  width: 50px;
+}
+
+.main-section .box a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px;
+  background-color: rgba(68, 122, 104, 0.696);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

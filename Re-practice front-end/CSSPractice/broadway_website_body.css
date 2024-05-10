@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+/* growing heading section */
+.growing {
+  height: 400px;
+  background-color: rgb(73, 12, 108);
+  background-image: url(/images/banner-pattern.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  /* padding: 20px auto; */
+}
+
+.heahingsh {
+  color: whitesmoke;
+  padding: 20px 30px;
+}
+
+.heahingsh > h2 {
+  margin-bottom: 25px;
+}
+
+.cotivity {
+  padding: 10px 10px;
+  background-color: white;
+  width: 50%;
+  margin: 0px 30px;
+  /* box-shadow: 10px -10px 10px rgba(151, 41, 65, 0.5); */
+}
+
+.cotivity p {
+  margin: 20px auto;
+}
+
+small {
+  color: gray;
+}
+
+h1 {
+  color: rgb(73, 12, 108);
+  margin: 40px 0;
+}
+
+p {
+  color: #ec008c;
+}
+/* growing heading section */
+
+/* who we are section */
+#who-we-are {
+  background-image: url(https://www.cotiviti.com.np/sites/all/themes/verscend/images/building.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  height: 400px;
+}
+
+.leftsection {
+  margin: 50px 30px;
+  width: 50%;
+  padding: 10px 10px;
+}
+
+.leftsection h2 {
+  color: #2e3192;
+  font-size: 30px;
+  font-family: "Kode Mono", monospace;
+}
+
+.leftsection p {
+  color: black;
+  margin: 10px 0;
+}
+.leftsection a {
+  text-decoration: none;
+  color: #2e3192;
+  display: inline;
+}
+/* who we are section */
+
+/* background attachment image */
+#attach-image {
+    background-image: url(https://www.cotiviti.com.np/sites/all/themes/verscend/images/parallax-home.jpg);
+    background-attachment: fixed;
+    height: 500px;
+}
+/* background attachment image */

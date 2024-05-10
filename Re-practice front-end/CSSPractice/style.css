@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  color: white;
+  background-color: purple;
+  font-size: 20px;
+  font-weight: 100;
+  border: 2px dashed black;
+}
+
+p {
+  background-color: aliceblue;
+  font-size: 30px;
+  font-weight: 900;
+  font-style: oblique;
+  border: 10px double red;
+}
+
+a {
+  background-color: rgb(28, 71, 180);
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+input {
+  border: none;
+  font-size: 15px;
+  padding: 5px;
+  font: 100;
+  font-size: 12px;
+  background-color: rgb(255, 9, 111);
+  color: rgb(229, 255, 0);
+}
+
+.subs {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.join {
+  border: none;
+  background-color: white;
+  border: 1px solid rgb(93, 93, 218);
+  color: rgb(93, 93, 218);
+  padding: 10px;
+}
+
+.tweet {
+  border: none;
+  background-color: rgb(44, 150, 244);
+  color: white;
+  padding: 10px;
+  border-radius: 18px;
+  font-weight: 800;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  color: white;
+  background-color: red;
+  /* border-radius: 50%; */
+  text-align: center;
+  /* all sides */
+  /* margin: 20px; */
+  /* two values */
+  /* margin: 5px 10px; */
+  /* three values */
+  /* margin: 5px 10px 15px; */
+  /* four values */
+  /* margin: 5px 10px 15px 20px; */
+  /* Similarly to that of margin padding is inside spaces */
+  padding: 20px;
+  padding: 20px 40px;
+  padding: 20px 40px 80px;
+  padding: 10px 20px 30px 40px;
+
+}

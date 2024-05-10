@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM manipulation</title>
+  </head>
+  <body>
+    <table id="sampleTable" border="1">
+      <tr>
+        <td>Row1 Col1</td>
+        <td>Row1 Col2</td>
+      </tr>
+      <tr>
+        <td>Row2 Col1</td>
+        <td>Row2 Col2</td>
+      </tr>
+      <tr>
+        <td>Row3 Col1</td>
+        <td>Row3 Col2</td>
+      </tr>
+      <tr>
+        <td>Row4 Col1</td>
+        <td>Row4 Col2</td>
+      </tr>
+      <tr>
+        <td>Row5 Col1</td>
+        <td>Row5 Col2</td>
+      </tr>
+    </table>
+    <br />
+    <input type="button" onclick="insertRowBottom()" value="Insert row" />
+    <input type="button" onclick="deleteRowTop()" value="Delete row" />
+
+    <script>
+      function insertRowBottom() {
+        var table = document
+          .getElementById("sampleTable")
+          .getElementsByTagName("tbody")[0];
+        var newRow = table.insertRow(-1);
+        var cell1 = newRow.insertCell(0);
+        var cell2 = newRow.insertCell(1);
+        var rowCount = table.rows.length;
+        cell1.innerHTML = "Row" + rowCount + " Col1";
+        cell2.innerHTML = "Row" + rowCount + " Col2";
+      }
+
+      function deleteRowTop() {
+        var table = document
+          .getElementById("sampleTable")
+          .getElementsByTagName("tbody")[0];
+        table.deleteRow(0);
+      }
+    </script>
+  </body>
+</html>

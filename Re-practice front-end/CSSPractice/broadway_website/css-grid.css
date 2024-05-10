@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .container {
+    display: grid;
+    grid-template-rows: repeat(6, 400px);
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.navbar {
+    background-color: antiquewhite;
+} */
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.containera {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.building {
+  background-color: #274595;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h3.building-title {
+    color: white;
+    font-size: 20px;
+}
+
+small {
+    color: white;
+    text-transform: uppercase;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+p.header {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.btn-admission {
+    padding: 10px;
+    color: #274595;
+    background-color: #aae9e6;
+    border: none;
+    border-radius: 4px;
+    width: 50%;
+}
+
+/* .slide-pic {
+    background-image: url(/images/silder-img.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+} */
+
+.slide-pic img {
+  width: 100%;
+  height: auto;
+}
+
+.two-row-div {
+    display: grid;
+}
+
+.two-row-div .first-div {
+    background-color: #3a6fdb;
+    padding: 10px;
+    color: white;
+}
+
+.two-row-div .second-div {
+    background-color: aquamarine;
+    padding: 10px;
+}

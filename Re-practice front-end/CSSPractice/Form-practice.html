@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form in HTML and CSS</title>
+    <link rel="stylesheet" href="Form-practice.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="contact-us-box">
+          <form action="#">
+            <div class="form-heading">
+              <h2>got a question? send an enquiry</h2>
+            </div>
+            <div class="form-group">
+              <label for="name">Name <span>*</span></label>
+              <input type="text" name="name" id="name" placeholder="Your Name">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email <span>*</span></label>
+              <input type="email" name="email" id="email" placeholder="Your Email">
+            </div>
+
+            <div class="form-group">
+              <label for="mobile-num">Mobile Number <span>*</span></label>
+              <input type="tel" name="telephone" id="mobile-num" placeholder="e.g. 9875215477">
+            </div>
+
+            <div class="form-group">
+              <label for="alt-num">Alternative Number <span>*</span></label>
+              <input type="tel" name="alt_telephone" id="alt-num" placeholder="e.g. 9875215477">
+            </div>
+
+            <div class="form-group">
+              <label for="course">Choose course <span>*</span></label>
+              <select id="courses">
+                <option value="chosse" selected>Choose Course</option>
+                <option value="AI/ML">AI and Machine Learning</option>
+                <option value="Py">Python</option>
+                <option value="Webdesign">Web designing</option>
+                <option value="CCNA">CCNA Training</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="school-name">School/ College Name</label>
+              <input type="text" name="school-name" id="school-name" placeholder="Your School/ College Name">
+            </div>
+
+            <div class="form-group">
+              <label for="other-course">If other Course</label>
+              <input type="text" name="course" id="other-course" placeholder="Mention the course name">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message<span>*</span></label>
+              <textarea name="message" id="message" cols="30" rows="5" placeholder="Tell us about you"></textarea>
+            </div>
+
+            <div class="form-group" id="btn-submit">
+              <button type="submit">submit<i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="https://kit.fontawesome.com/7e1f901272.js" crossorigin="anonymous"></script>
+  </body>
+</html>

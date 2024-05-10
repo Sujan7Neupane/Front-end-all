@@ -1,0 +1,45 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  background-color: black;
+}
+
+header {
+  text-align: center ;
+}
+img {
+  width: 100px;
+}
+
+nav a {
+  color: yellow;
+  border: 2px solid yellow;
+  text-decoration: none;
+  padding: 5px;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.skills {
+  border: 5px double yellow;
+  color: white;
+}
+
+.edu {
+  background-color: yellow;
+  color: black;
+  padding: 5px;
+}
+
+.experience {
+  color: white;
+  border: 7px dashed red;
+}

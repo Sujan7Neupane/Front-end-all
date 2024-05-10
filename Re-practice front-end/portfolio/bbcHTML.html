@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BBC website with HTML only</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="https://bbc.com" target="_blank"
+          ><img
+            src="data:image/png;base64,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"
+            alt="bbclogo"
+        /></a>
+        <a
+          href="https://account.bbc.com/auth?realm=%2F&clientId=Account&context=homepage&ptrt=https%3A%2F%2Fwww.bbc.com%2F&userOrigin=HOMEPAGE_GNL&isCasso=false&action=sign-in&redirectUri=https%3A%2F%2Fsession.bbc.com%2Fsession%2Fcallback%3Frealm%3D%2F&service=IdSignInService&nonce=XUdDsTlJ-8u0exoMQxXdlHh4o_RI6S_t7Spk"
+          target="_blank"
+          ><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE6ngUoR2Gtuod2orEd_6Gl0f_-uzqzzaVoQ&usqp=CAU"
+            alt="signup"
+        /></a>
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#News">News</a></li>
+          <li><a href="#Sport">Sport</a></li>
+          <li><a href="#Earth">Earth</a></li>
+          <li><a href="More">More</a></li>
+          <li><a href="#search">Search</a></li>
+        </ul>
+        <ul>
+          <li><a href="">Reel</a></li>
+          <li><a href="">Worklife</a></li>
+          <li><a href="">Travel</a></li>
+          <li><a href="">Culture</a></li>
+          <li><a href="">Future</a></li>
+          <li><a href="">TV</a></li>
+          <li><a href="">Weather</a></li>
+          <li><a href="">Sounds</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="headings">
+        <div>
+          <img src="" alt="headingimg" />
+          <h1>
+            'I'm sad for everyone who's been killed': How two years of war in
+            Ukraine changed Russia
+          </h1>
+          <p>
+            It made me think about everything that has happened in Russia these
+            last two years, since President Putin ordered the full-scale
+            invasion of Ukraine.
+          </p>
+        </div>
+      </section>
+      <section id="secondHeading">
+        <div>
+          <img src="" alt="headingimg" />
+          <h1>
+            'I'm sad for everyone who's been killed': How two years of war in
+            Ukraine changed Russia
+          </h1>
+          <p>
+            It made me think about everything that has happened in Russia these
+            last two years, since President Putin ordered the full-scale
+            invasion of Ukraine.
+          </p>
+        </div>
+        <div>
+          <img src="" alt="headingimg" />
+          <h1>
+            'I'm sad for everyone who's been killed': How two years of war in
+            Ukraine changed Russia
+          </h1>
+          <p>
+            It made me think about everything that has happened in Russia these
+            last two years, since President Putin ordered the full-scale
+            invasion of Ukraine.
+          </p>
+        </div>
+      </section>
+    </main>
+    <section id="news">
+      <img src="" alt="newsimg1" />
+      <h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+        nesciunt.
+      </h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus in
+        dignissimos aliquam sunt excepturi dicta maxime fugit quo architecto
+        atque?
+      </p>
+      <img src="" alt="newsimg2" />
+      <h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+        nesciunt.
+      </h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus in
+        dignissimos aliquam sunt excepturi dicta maxime fugit quo architecto
+        atque?
+      </p>
+      <img src="" alt="newsimg3" />
+      <h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+        nesciunt.
+      </h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus in
+        dignissimos aliquam sunt excepturi dicta maxime fugit quo architecto
+        atque?
+      </p>
+    </section>
+    <section id="Sports">
+      <img src="" alt="sportsimg1" />
+      <h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+        nesciunt.
+      </h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus in
+        dignissimos aliquam sunt excepturi dicta maxime fugit quo architecto
+        atque?
+      </p>
+      <img src="" alt="sportsimg2" />
+      <h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+        nesciunt.
+      </h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus in
+        dignissimos aliquam sunt excepturi dicta maxime fugit quo architecto
+        atque?
+      </p>
+      <img src="" alt="sportsimg3" />
+      <h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+        nesciunt.
+      </h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus in
+        dignissimos aliquam sunt excepturi dicta maxime fugit quo architecto
+        atque?
+      </p>
+    </section>
+    <section id="weather">
+      <a href=""><img src="" alt="weatherimg1" /></a>
+      <a href=""><img src="" alt="weatherimg2" /></a>
+      <a href=""><img src="" alt="weatherimg3" /></a>
+    </section>
+    <section id="editorspicks">
+      <div class="leftside">
+        <a href=""><img src="" alt="filmimage" /></a>
+        <h2>The film's description moments</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+          quibusdam!
+        </p>
+      </div>
+      <div class="aside">
+        <h4>LATEST BUSINESS NEWS</h4>
+        <h3>1</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+        <h4>LATEST BUSINESS NEWS</h4>
+        <h3>2</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+        <h4>LATEST BUSINESS NEWS</h4>
+        <h3>3</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+        <h4>LATEST BUSINESS NEWS</h4>
+        <h3>4</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+      </div>
+    </section>
+    <footer>
+      <h2>Explore the BBC</h2>
+      <div class="upperlinks" style="display: flex; flex-direction: row; justify-content: space-around;" >
+        <div class="firstlink">
+          <ul style="list-style-type: none;">
+            <li><a href="">Home</a></li>
+            <li><a href="">Reel</a></li>
+            <li><a href="">Future</a></li>
+          </ul>
+        </div>
+        <div class="secondlink">
+          <ul style="list-style-type: none;">
+            <li><a href="">News</a></li>
+            <li><a href="">Worklife</a></li>
+            <li><a href="">TV</a></li>
+          </ul>
+        </div>
+        <div class="thirdlinks">
+          <ul style="list-style-type: none;">
+            <li><a href="">Sport</a></li>
+            <li><a href="">Travel</a></li>
+            <li><a href="">Weather</a></li>
+          </ul>
+        </div>
+        <div class="forthlinks">
+          <ul style="list-style-type: none;">
+            <li><a href="">Earth</a></li>
+            <li><a href="">Culture</a></li>
+            <li><a href="">Sounds</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="lowerlinks" style="display: flex; flex-direction: row; align-items: center; justify-content: space-around;" >
+        <div class="lowerfirstlinks">
+          <ul style="list-style-type: none;">
+            <li><a href="" style="text-decoration: none;">Terms of use</a></li>
+            <li><a href="" style="text-decoration: none;">Accessibility Help</a></li>
+            <li><a href="" style="text-decoration: none;">Advertise with us</a></li>
+          </ul>
+        </div>
+        <div class="lowersecondlinks">
+          <ul style="list-style-type: none;">
+            <li><a href="">About the BBC</a></li>
+            <li><a href="">Prental Guidence</a></li>
+            <li><a href="">Do not share or sell my info</a></li>
+          </ul>
+        </div>
+        <div class="lowerthirdlinks">
+          <ul style="list-style-type: none;">
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Contact the BBC</a></li>
+          </ul>
+        </div>
+        <div class="lowerforthlinks">
+          <ul style="list-style-type: none;">
+            <li><a href="">Cookies</a></li>
+            <li><a href="">BBC emails for you</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copurightinfo">
+        Copyright © 2024 BBC. The BBC is not responsible for the content of
+        external sites. Read about our approach to external linking.
+      </div>
+    </footer>
+  </body>
+</html>
